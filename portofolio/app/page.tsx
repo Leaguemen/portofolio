@@ -242,10 +242,28 @@ export default function Home() {
                   "フルスタックエンジニアとして、情報工学を学びながら、ウェブ開発、システム、高性能計算に取り組んでいます。バンドンから東京へ、あらゆる階層に好奇心を。",
                 )}
               </p>
-              <a className="text-link" href="#work">
-                {t("Explore my work", "制作実績を見る")}
-                <span aria-hidden="true">↓</span>
-              </a>
+              <div className="intro-actions">
+                <a
+                  className="feature-button"
+                  href="/documents/Venantius-Sean-Ardi-Nugroho-CV.pdf"
+                  download="Venantius-Sean-Ardi-Nugroho-CV.pdf"
+                >
+                  {t("English CV (PDF)", "英文 CV（PDF）")}
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <a
+                  className="feature-button cv-japanese"
+                  href="/documents/Venantius-Sean-Japanese-Resume.pdf"
+                  download="Venantius-Sean-Japanese-Resume.pdf"
+                >
+                  {t("Japanese résumé (PDF)", "履歴書・職務経歴書（PDF）")}
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <a className="text-link" href="#work">
+                  {t("Explore my work", "制作実績を見る")}
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </div>
             </div>
             <figure className="hero-photo">
               <Image
@@ -496,8 +514,8 @@ export default function Home() {
               </h3>
               <p>
                 {t(
-                  "I study Informatics at Bandung Institute of Technology and research high-performance computing at the University of Electro-Communications in Tokyo, supported by a full MEXT scholarship.",
-                  "バンドン工科大学で情報工学を学び、文部科学省（MEXT）の全額奨学金を受けて、東京の電気通信大学で高性能計算を研究しています。",
+                  "I study Informatics at Bandung Institute of Technology and research high-performance computing at the University of Electro-Communications in Tokyo, supported by a JASSO scholarship.",
+                  "バンドン工科大学で情報工学を学び、日本学生支援機構（JASSO）の奨学金を受けて、東京の電気通信大学で高性能計算を研究しています。",
                 )}
               </p>
               <p>
@@ -581,8 +599,8 @@ export default function Home() {
                 </strong>
                 <br />
                 {t(
-                  "Research student · MEXT scholarship · 2025–2026",
-                  "研究生 · MEXT 奨学金 · 2025–2026",
+                  "Research student · JASSO scholarship · 2025–2026",
+                  "研究生 · JASSO 奨学金 · 2025–2026",
                 )}
               </p>
               <p>

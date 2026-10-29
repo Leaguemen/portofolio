@@ -1,0 +1,116 @@
+% Compile with: latexmk -pdf cv.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{7pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=4pt,topsep=6pt,parsep=0pt,partopsep=0pt}
+\newcommand{\entry}[4]{%
+  \Needspace{4\baselineskip}%
+  \textbf{#1}\hfill #2\\
+  \textit{#3}\hfill\textit{#4}\par}
+\newcommand{\project}[3]{%
+  \Needspace{4\baselineskip}%
+  \textbf{#1}\par #2\par Link: #3\par\vspace{6pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries VENANTIUS SEAN ARDI NUGROHO}\\[6pt]
++62 85956659510\quad |\quad
+\href{mailto:seannugroho8@gmail.com}{seannugroho8@gmail.com}\quad |\quad
+\href{https://www.linkedin.com/in/venantius-sean-ardi-nugroho/}{LinkedIn}\quad |\quad
+\href{https://github.com/Leaguemen}{GitHub}
+\end{center}
+
+\section*{Education}
+\entry{University of Electro-Communications}{Tokyo, Japan}{Research Student}{2025 -- 2026}
+\begin{itemize}
+\item Research focus: High Performance Computing
+\item Scholarship: JASSO Scholarship
+\end{itemize}
+\entry{Bandung Institute of Technology (ITB)}{Bandung, Indonesia}{B.Sc. in Informatics}{2022 -- Present}
+\begin{itemize}
+\item GPA: 3.49 / 4.00
+\item Expected graduation: December 2026
+\item Relevant coursework: Algorithms \& Data Structures, Database Systems, Operating Systems, Computer Organization \& Architecture, Computer Networks, Parallel \& Distributed Systems, Artificial Intelligence, Machine Learning, Object-Oriented Programming, Web Application Development
+\end{itemize}
+
+\section*{Publication}
+\textbf{Nugroho, Venantius Sean Ardi; Miwa, Shinobu}\\
+\textit{Impact of Inference-Time Reasoning on LLM-Based Parallel Code Generation: a Case-Study of Kokkos}\\
+ISC High Performance 2026, March 2026.\\
+Published as research conducted at the University of Electro-Communications.
+
+\section*{Work Experience}
+\entry{P.T. Doval Sejahtera Investa}{Bandung, Indonesia}{Full-Stack Engineer}{March 2026 -- Present}
+\begin{itemize}
+\item Developed and maintained full-stack web applications based on business requirements and company needs.
+\item Designed and implemented end-to-end application features, covering both frontend and backend development.
+\item Developed internal web-based applications for tracking employee man-hours and managing invoice reimbursement processes.
+\end{itemize}
+\entry{P.T. Teleakses Solusindo}{Jakarta, Indonesia}{Software Developer Intern}{June 2025 -- August 2025}
+\begin{itemize}
+\item Developed a high-performance backend for an Audit Trail system in Go, achieving throughput of over 3,000 requests per second.
+\item Built a mobile frontend using Flutter for a client-facing application.
+\item Migrated a legacy website to a modern Vue.js-based web application.
+\end{itemize}
+\entry{Saint Theodore Church}{Bandung, Indonesia}{Full-Stack Web Developer}{July 2024 -- August 2024}
+\begin{itemize}
+\item Independently developed a web application for a church event using Node.js and React.
+\item Designed, implemented, and managed the application database using MySQL.
+\item Deployed and maintained the web application through cPanel.
+\end{itemize}
+
+\section*{Leadership \& Organizational Experience}
+\entry{Pemilu HMIF 2025}{Bandung, Indonesia}{Head of IT Department}{October 2024 -- March 2025}
+\begin{itemize}
+\item Led a team of 10 developers as Project Manager to build an election web application.
+\item Contributed as a Full-Stack Developer by developing the voting API using Next.js.
+\item Deployed the application using Vercel.
+\end{itemize}
+\entry{Pemilu HMIF 2024}{Bandung, Indonesia}{Front-End Developer}{December 2023 -- March 2024}
+\begin{itemize}
+\item Developed multiple React pages for the election platform.
+\item Built reusable React components to support the web application interface.
+\end{itemize}
+
+\section*{Highlighted Projects}
+\project{Pemilu HMIF Web Application (2025)}
+{Developed a web application using Next.js (T3 Stack) to support the student election process for STEI-K ITB.}
+{\url{https://pemilu.hmif.dev/}}
+\project{Web Application for Pope's Mass --- Saint Theodore Church (2024)}
+{Built a Node.js and React-based web application to help church members access information related to the Pope's Mass event.}
+{\url{https://bit.ly/misapaus}}
+\project{Artificial Intelligence Model for Network Security (2024)}
+{Built machine learning models from scratch in Python, including K-Nearest Neighbor, Naive Bayes, and Decision Tree algorithms, to detect whether a network was under attack. Also compared the custom implementations with scikit-learn models.}
+{\href{https://github.com/CrystalNoob/Tubes2_AI/}{GitHub Repository}}
+\project{Python-Based Database Management System (2024)}
+{Developed a database management system from scratch in Python as part of a college group project.}
+{\href{https://github.com/zultopia/Tubes-SBD-MarioDB}{GitHub Repository}}
+\project{Linux-Based Operating System (2024)}
+{Built a command-line operating system from scratch using C and Assembly in a college group project.}
+{\href{https://github.com/labsister21/os-2024-michaelsoftbinbows}{GitHub Repository}}
+
+\section*{Technical Skills}
+\textbf{Programming Languages:} Go, Python, Java, C/C++, TypeScript, SQL\\
+\textbf{Frontend:} React, Next.js, Vue.js, Flutter\\
+\textbf{Backend:} Fiber, Node.js, REST APIs\\
+\textbf{Databases:} PostgreSQL, MySQL\\
+\textbf{Tools:} Git, Docker, Linux
+
+\section*{Language Proficiency}
+\textbf{English:} IELTS 8.0\\
+{\small Certificate: \href{https://drive.google.com/file/d/1WDIrRbLTyx0nKIVyo185zyAxPr9DwWfj/view?usp=sharing}{View Certificate}}\par\vspace{5pt}
+\textbf{Japanese:} JLPT N3\\
+{\small Certificate: \href{https://drive.google.com/file/d/1UvUr-HtC_kHgTHpfj055hOPcRCTkDKVO/view?usp=sharing}{View Certificate}}\par\vspace{5pt}
+\textbf{Indonesian:} Native Speaker
+\end{document}
